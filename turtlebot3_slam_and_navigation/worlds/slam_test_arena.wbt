@@ -1,0 +1,82 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/fridge/protos/Fridge.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/bathroom/protos/WashingMachine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/robotis/protos/RobotisLds01.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5058120218335896 -0.04886415139545872 -0.8612586680417317 3.3076090700187923
+  position 2.2999123129011725 -1.1092690765456896 2.904071155097659
+  follow "TurtleBot3Burger"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 0.3
+}
+WoodenBox {
+  translation 1.0677075202737032 -1.5692368764008955 0.1968608
+  rotation -3.662489740230658e-18 2.061388976243437e-18 1 0.7854073134990864
+  name "wooden_box_1"
+  size 0.5 0.5 0.4
+  mass 8
+}
+WoodenBox {
+  translation 1.5545900047065582 -1.2326200039923907 0.14764560000000004
+  rotation -2.205306518612311e-18 -2.0015627790279518e-17 1 0.5235986461423874
+  name "wooden_box_2"
+  size 0.6 0.3 0.3
+  mass 6
+}
+WoodenBox {
+  translation -0.24541 -0.209666 0.2476456000000001
+  rotation -5.2025689690281176e-18 -4.1725460090501126e-18 1 1.5708000000000004
+  name "wooden_box_3"
+  size 1.8 0.9 0.5
+  mass 6
+}
+Sofa {
+  translation -1.93 -0.169995 0
+  rotation 0 0 1 -5.307179586466759e-06
+}
+OilBarrel {
+  translation 1.21 1.49 0.44
+  name "oil_barrel"
+}
+Fridge {
+  translation -2.14 2.11 0
+}
+WashingMachine {
+  translation -2.07 -1.79 0.53
+}
+TurtleBot3Burger {
+  translation 1.26493 -0.735481 -0.000100174
+  rotation 0 0 1 1.8326
+  controller "turtlebot3_slam"
+  extensionSlot [
+    InertialUnit {
+    }
+    Display {
+      width 256
+      height 256
+    }
+    RobotisLds01 {
+    }
+  ]
+}
